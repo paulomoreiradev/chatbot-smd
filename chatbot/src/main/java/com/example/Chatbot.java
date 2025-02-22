@@ -5,6 +5,7 @@ import java.util.Scanner;
 import entities.Curso;
 import entities.Disciplina;
 import entities.Mensagem;
+import entities.Periodo;
 import entities.RespostaCurso;
 import entities.RespostaDisciplina;
 import entities.RespostaProfessor;
@@ -59,18 +60,24 @@ public class Chatbot {
         } else if (texto.contains("listar disciplinas") || texto.contains("quais são as disciplinas")) {
             return listarDisciplinas();
         } else if (texto.contains("disciplina")) {
-            // Procura pelo nome da disciplina no texto
-            for (Disciplina disciplina : curso.getDisciplinas()) {
-                if (texto.contains(disciplina.getNome().toLowerCase())) {
-                    return new RespostaDisciplina(disciplina).gerarResposta();
+            // Procura pelo nome da disciplina no texto, iterando sobre os períodos
+            for (Periodo periodo : curso.getPeriodos()) {
+                for (Disciplina disciplina : periodo.getDisciplinas()) {
+                    if (texto.contains(disciplina.getNome().toLowerCase())) {
+                        return new RespostaDisciplina(disciplina).gerarResposta();
+                    }
                 }
             }
             return "Desculpe, não encontrei informações sobre essa disciplina.";
         } else if (texto.contains("professor")) {
-            // Procura pelo nome do professor no texto
-            for (Professor professor : curso.getProfessores()) {
-                if (texto.contains(professor.getNome().toLowerCase())) {
-                    return new RespostaProfessor(professor).gerarResposta();
+            // Procura pelo nome do professor no texto, iterando sobre os períodos e disciplinas
+            for (Periodo periodo : curso.getPeriodos()) {
+                for (Disciplina disciplina : periodo.getDisciplinas()) {
+                    for (Professor professor : disciplina.getProfessores()) {
+                        if (texto.contains(professor.getNome().toLowerCase())) {
+                            return new RespostaProfessor(professor).gerarResposta();
+                        }
+                    }
                 }
             }
             return "Desculpe, não encontrei informações sobre esse professor.";
@@ -80,10 +87,16 @@ public class Chatbot {
     }
 
     private String listarDisciplinas() {
-        StringBuilder disciplinasStr = new StringBuilder("Disciplinas do curso:\n");
-        for (Disciplina disciplina : curso.getDisciplinas()) {
-            disciplinasStr.append("- ").append(disciplina.getNome()).append("\n");
+        StringBuilder disciplinasStr = new StringBuilder("Disciplinas do curso ");
+        disciplinasStr.append(curso.getNome()).append(" por período:\n"); // Adiciona o nome do curso
+
+        for (Periodo periodo : curso.getPeriodos()) {
+            disciplinasStr.append("Período ").append(periodo.getOrdem()).append(":\n");
+            for (Disciplina disciplina : periodo.getDisciplinas()) {
+                disciplinasStr.append("- ").append(disciplina.getNome()).append("\n");
+            }
         }
+
         return disciplinasStr.toString();
     }
 

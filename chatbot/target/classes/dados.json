@@ -1,31 +1,55 @@
 {
     "curso": "Sistemas e Mídias Digitais",
-    "disciplinas": [
+    "periodos": [
       {
-        "nome": "Programação Orientada a Objetos",
-        "descricao": "Aprenda POO em Java"
+        "ordem": 1,
+        "disciplinas": [
+          {
+            "nome": "Introdução à Programação",
+            "descricao": "Aprenda os conceitos básicos de programação.",
+            "professores": [
+              {
+                "nome": "Carlos",
+                "areaAtuacao": "Desenvolvimento de Software"
+              }
+            ]
+          },
+          {
+            "nome": "Matemática Discreta",
+            "descricao": "Fundamentos matemáticos para computação.",
+            "professores": [
+              {
+                "nome": "Ana",
+                "areaAtuacao": "Matemática Aplicada"
+              }
+            ]
+          }
+        ]
       },
       {
-        "nome": "Desenvolvimento Web",
-        "descricao": "Aprenda a criar sites dinâmicos"
-      },
-      {
-        "nome": "Design de Interfaces",
-        "descricao": "Aprenda a criar interfaces intuitivas"
-      }
-    ],
-    "professores": [
-      {
-        "nome": "Carlos",
-        "areaAtuacao": "Desenvolvimento de Software"
-      },
-      {
-        "nome": "Ana",
-        "areaAtuacao": "Design de Interfaces"
-      },
-      {
-        "nome": "Pedro",
-        "areaAtuacao": "Banco de Dados"
+        "ordem": 2,
+        "disciplinas": [
+          {
+            "nome": "Programação Orientada a Objetos",
+            "descricao": "Aprenda POO em Java.",
+            "professores": [
+              {
+                "nome": "Carlos",
+                "areaAtuacao": "Desenvolvimento de Software"
+              }
+            ]
+          },
+          {
+            "nome": "Estruturas de Dados",
+            "descricao": "Aprenda sobre listas, pilhas e filas.",
+            "professores": [
+              {
+                "nome": "Pedro",
+                "areaAtuacao": "Algoritmos e Estruturas de Dados"
+              }
+            ]
+          }
+        ]
       }
     ]
-}
+  }

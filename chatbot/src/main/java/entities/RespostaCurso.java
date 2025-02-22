@@ -10,6 +10,6 @@ public class RespostaCurso implements InterfaceResposta {
 
     @Override
     public String gerarResposta() {
-        return "O curso de " + curso.getNome() + " possui " + curso.getDisciplinas().size() + " disciplinas.";
+        return "O curso de " + curso.getNome() + " possui " + curso.getPeriodos().size() + " períodos.";
     }
 }
