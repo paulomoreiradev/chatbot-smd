@@ -1,0 +1,31 @@
+{
+    "curso": "Sistemas e Mídias Digitais",
+    "disciplinas": [
+      {
+        "nome": "Programação Orientada a Objetos",
+        "descricao": "Aprenda POO em Java"
+      },
+      {
+        "nome": "Desenvolvimento Web",
+        "descricao": "Aprenda a criar sites dinâmicos"
+      },
+      {
+        "nome": "Design de Interfaces",
+        "descricao": "Aprenda a criar interfaces intuitivas"
+      }
+    ],
+    "professores": [
+      {
+        "nome": "Carlos",
+        "areaAtuacao": "Desenvolvimento de Software"
+      },
+      {
+        "nome": "Ana",
+        "areaAtuacao": "Design de Interfaces"
+      },
+      {
+        "nome": "Pedro",
+        "areaAtuacao": "Banco de Dados"
+      }
+    ]
+}
