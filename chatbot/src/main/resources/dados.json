@@ -1,55 +1,355 @@
 {
-    "curso": "Sistemas e Mídias Digitais",
-    "periodos": [
-      {
-        "ordem": 1,
-        "disciplinas": [
-          {
-            "nome": "Introdução à Programação",
-            "descricao": "Aprenda os conceitos básicos de programação.",
-            "professores": [
-              {
-                "nome": "Carlos",
-                "areaAtuacao": "Desenvolvimento de Software"
-              }
-            ]
-          },
-          {
-            "nome": "Matemática Discreta",
-            "descricao": "Fundamentos matemáticos para computação.",
-            "professores": [
-              {
-                "nome": "Ana",
-                "areaAtuacao": "Matemática Aplicada"
-              }
-            ]
-          }
+  "curso": "Sistemas e Mídias Digitais",
+  "periodos": [
+    {
+      "ordem": 1,
+      "disciplinas": [
+        {
+          "nome": "Autoração Multimídia I",
+          "descricao": "Introdução à criação de conteúdos multimídia.",
+          "professores": [
+            {
+              "nome": "Maria Silva",
+              "areaAtuacao": "Design Multimídia"
+            }
+          ]
+        },
+        {
+          "nome": "Desenho I",
+          "descricao": "Fundamentos do desenho artístico e técnico.",
+          "professores": [
+            {
+              "nome": "João Pereira",
+              "areaAtuacao": "Artes Visuais"
+            }
+          ]
+        },
+        {
+          "nome": "História do Design",
+          "descricao": "Evolução do design ao longo da história.",
+          "professores": [
+            {
+              "nome": "Ana Costa",
+              "areaAtuacao": "História da Arte"
+            }
+          ]
+        },
+        {
+          "nome": "Introdução a Sistemas e Mídias Digitais",
+          "descricao": "Conceitos básicos de sistemas e mídias digitais.",
+          "professores": [
+            {
+              "nome": "Carlos Mendes",
+              "areaAtuacao": "Tecnologia da Informação"
+            }
+          ]
+        },
+        {
+          "nome": "Programação I",
+          "descricao": "Introdução à lógica de programação.",
+          "professores": [
+            {
+              "nome": "Fernanda Oliveira",
+              "areaAtuacao": "Desenvolvimento de Software"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ordem": 2,
+      "disciplinas": [
+        {
+          "nome": "Narrativas Multimídia",
+          "descricao": "Criação de narrativas para mídias digitais.",
+          "professores": [
+            {
+              "nome": "Ricardo Almeida",
+              "areaAtuacao": "Comunicação Digital"
+            }
+          ]
+        },
+        {
+          "nome": "Programação II",
+          "descricao": "Aprofundamento em programação orientada a objetos.",
+          "professores": [
+            {
+              "nome": "Fernanda Oliveira",
+              "areaAtuacao": "Desenvolvimento de Software"
+            }
+          ]
+        },
+        {
+          "nome": "Comunicação Visual I",
+          "descricao": "Fundamentos de design gráfico e comunicação visual.",
+          "professores": [
+            {
+              "nome": "Patrícia Lima",
+              "areaAtuacao": "Design Gráfico"
+            }
+          ]
+        },
+        {
+          "nome": "Matemática Aplicada à Multimídia I",
+          "descricao": "Aplicações matemáticas em projetos multimídia.",
+          "professores": [
+            {
+              "nome": "Luiz Fernandes",
+              "areaAtuacao": "Matemática Aplicada"
+            }
+          ]
+        },
+        {
+          "nome": "Cognição e Tecnologias Digitais",
+          "descricao": "Estudo da interação entre cognição humana e tecnologias digitais.",
+          "professores": [
+            {
+              "nome": "Camila Rocha",
+              "areaAtuacao": "Psicologia Cognitiva"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ordem": 3,
+      "disciplinas": [
+        {
+          "nome": "Design de Interfaces Gráficas",
+          "descricao": "Princípios de design para interfaces gráficas.",
+          "professores": [
+            {
+              "nome": "Patrícia Lima",
+              "areaAtuacao": "Design Gráfico"
+            }
+          ]
+        },
+        {
+          "nome": "Projeto Integrado I",
+          "descricao": "Desenvolvimento de projetos multimídia integrados.",
+          "professores": [
+            {
+              "nome": "Ricardo Almeida",
+              "areaAtuacao": "Comunicação Digital"
+            }
+          ]
+        },
+        {
+          "nome": "Autoração Multimídia II",
+          "descricao": "Avançado em criação de conteúdos multimídia.",
+          "professores": [
+            {
+              "nome": "Maria Silva",
+              "areaAtuacao": "Design Multimídia"
+            }
+          ]
+        },
+        {
+          "nome": "Interação Humano-Computador I",
+          "descricao": "Estudo da interação entre usuários e sistemas computacionais.",
+          "professores": [
+            {
+              "nome": "Camila Rocha",
+              "areaAtuacao": "Psicologia Cognitiva"
+            }
+          ]
+        },
+        {
+          "nome": "Introdução à Cibercultura",
+          "descricao": "Exploração da cultura digital e suas implicações.",
+          "professores": [
+            {
+              "nome": "Carlos Mendes",
+              "areaAtuacao": "Tecnologia da Informação"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ordem": 4,
+      "disciplinas": [
+        {
+          "nome": "Análise e Projeto de Sistemas",
+          "descricao": "Técnicas de análise e projeto de sistemas de software.",
+          "professores": [
+            {
+              "nome": "Fernanda Oliveira",
+              "areaAtuacao": "Desenvolvimento de Software"
+            }
+          ]
+        },
+        {
+          "nome": "Estrutura de Dados",
+          "descricao": "Estudo de estruturas de dados e algoritmos.",
+          "professores": [
+            {
+              "nome": "Pedro Santos",
+              "areaAtuacao": "Ciência da Computação"
+            }
+          ]
+        },
+        {
+          "nome": "Redes de Computadores",
+          "descricao": "Fundamentos de redes e comunicação de dados.",
+          "professores": [
+            {
+              "nome": "Carlos Mendes",
+              "areaAtuacao": "Tecnologia da Informação"
+            }
+          ]
+        },
+        {
+          "nome": "Fotografia Digital",
+          "descricao": "Técnicas de fotografia digital e edição de imagens.",
+          "professores": [
+            {
+              "nome": "João Pereira",
+              "areaAtuacao": "Artes Visuais"
+            }
+          ]
+        },
+        {
+          "nome": "Semiótica Aplicada",
+          "descricao": "Aplicação da semiótica na comunicação visual.",
+          "professores": [
+            {
+              "nome": "Ana Costa",
+              "areaAtuacao": "História da Arte"
+            }
+          ]
+        },
+        {
+          "nome": "Desenho II",
+          "descricao": "Avançado em desenho artístico e técnico.",
+          "professores": [
+            {
+              "nome": "João Pereira",
+              "areaAtuacao": "Artes Visuais"
+            }
+          ]
+        },
+        {
+          "nome": "Metodologia de Pesquisa Científica",
+          "descricao": "Métodos e técnicas de pesquisa científica.",
+          "professores": [
+            {
+              "nome": "Camila Rocha",
+              "areaAtuacao": "Psicologia Cognitiva"
+            }
+          ]
+        }
+      ]
+    },
+    {
+    "ordem": 5,
+    "disciplinas": [
+        {
+        "nome": "Design de Som",
+        "descricao": "Técnicas de design e edição de áudio para projetos multimídia.",
+        "professores": [
+            {
+            "nome": "Roberto Alves",
+            "areaAtuacao": "Design de Som"
+            }
         ]
-      },
-      {
-        "ordem": 2,
-        "disciplinas": [
-          {
-            "nome": "Programação Orientada a Objetos",
-            "descricao": "Aprenda POO em Java.",
-            "professores": [
-              {
-                "nome": "Carlos",
-                "areaAtuacao": "Desenvolvimento de Software"
-              }
-            ]
-          },
-          {
-            "nome": "Estruturas de Dados",
-            "descricao": "Aprenda sobre listas, pilhas e filas.",
-            "professores": [
-              {
-                "nome": "Pedro",
-                "areaAtuacao": "Algoritmos e Estruturas de Dados"
-              }
-            ]
-          }
+        },
+        {
+        "nome": "Engenharia de Software",
+        "descricao": "Metodologias e práticas para desenvolvimento de software.",
+        "professores": [
+            {
+            "nome": "Fernanda Oliveira",
+            "areaAtuacao": "Engenharia de Software"
+            }
         ]
-      }
+        },
+        {
+        "nome": "Banco de Dados I",
+        "descricao": "Fundamentos de modelagem e manipulação de bancos de dados.",
+        "professores": [
+            {
+            "nome": "Pedro Santos",
+            "areaAtuacao": "Banco de Dados"
+            }
+        ]
+        },
+        {
+        "nome": "Comunicação Visual II",
+        "descricao": "Avançado em design gráfico e comunicação visual.",
+        "professores": [
+            {
+            "nome": "Patrícia Lima",
+            "areaAtuacao": "Design Gráfico"
+            }
+        ]
+        }
     ]
-  }
+    },
+    {
+    "ordem": 6,
+    "disciplinas": [
+        {
+        "nome": "Ética e Política Autoral",
+        "descricao": "Discussão sobre ética e direitos autorais na produção multimídia.",
+        "professores": [
+            {
+            "nome": "Ana Costa",
+            "areaAtuacao": "Ética e Direito"
+            }
+        ]
+        },
+        {
+        "nome": "Gestão de Projetos Multimídia",
+        "descricao": "Gestão de projetos na área de multimídia.",
+        "professores": [
+            {
+            "nome": "Ricardo Almeida",
+            "areaAtuacao": "Gestão de Projetos"
+            }
+        ]
+        }
+    ]
+    },
+    {
+    "ordem": 7,
+    "disciplinas": [
+        {
+        "nome": "Projeto Integrado II",
+        "descricao": "Desenvolvimento de projetos multimídia avançados.",
+        "professores": [
+            {
+            "nome": "Maria Silva",
+            "areaAtuacao": "Design Multimídia"
+            }
+        ]
+        }
+    ]
+    },
+    {
+    "ordem": 8,
+    "disciplinas": [
+        {
+        "nome": "Seminários em Multimídia",
+        "descricao": "Apresentação e discussão de temas avançados em multimídia.",
+        "professores": [
+            {
+            "nome": "Carlos Mendes",
+            "areaAtuacao": "Tecnologia da Informação"
+            }
+        ]
+        },
+        {
+        "nome": "Projeto de Trabalho Final",
+        "descricao": "Desenvolvimento do trabalho de conclusão de curso.",
+        "professores": [
+            {
+            "nome": "Camila Rocha",
+            "areaAtuacao": "Psicologia Cognitiva"
+            }
+        ]
+        }
+    ]
+    }
+  ]
+}
