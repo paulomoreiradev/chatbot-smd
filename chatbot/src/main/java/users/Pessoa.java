@@ -1,6 +1,6 @@
 package users;
 
-public class Pessoa {
+public abstract class Pessoa {
     protected String nome;
 
     public Pessoa(String nome) {
